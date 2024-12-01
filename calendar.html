@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <p class="header__text">Привет, Ксения!</p>
+          <p class="header__date">5 октября 2024</p>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="20" height="22">
+            <use xlink:href="./images/icons.svg#calendar"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="popup">
+      <form class="popup__form popup__form-time">
+        <h5 class="popup__form-title">Время</h5>
+        <div class="popup__form-wrapper">
+          <button class="popup__form-input popup__select-button" type="button">
+            Выберите время
+            <svg class="popup__form-arrow" width="20" height="20" fill="none">
+              <use xlink:href="./images/icons.svg#choose-arrow"></use>
+            </svg>
+          </button>
+          <div class="white-box popup__select-list"></div>
+
+          <svg class="popup__form-icon" width="16" height="16">
+            <use xlink:href="./images/icons.svg#time"></use>
+          </svg>
+        </div>
+        <button class="button popup__form-submit" type="submit">
+          Сохранить
+        </button>
+      </form>
+      <div class="popup__box">
+        <img class="popup__box-top" src="./images/trophy.png" />
+        <h5 class="popup__title black-v-18">Поздравляем!</h5>
+        <p class="popup__text">Вы записаны на 26 октября, 14:00 pm</p>
+        <a class="button popup__button" href="/">На главную</a>
+      </div>
+    </div>
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./images/icons.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="train.html">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#train"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#calendar-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#messages"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="main">
+      <section class="choose">
+        <div class="container">
+          <div class="choose__select">
+            <button class="white-box black-v-16 choose__button">
+              <svg width="20" height="20">
+                <use xlink:href="./images/icons.svg#dumbbell"></use>
+              </svg>
+              <span class="choose__type">CROSSFIT</span>
+              <svg class="choose__arrow" width="20" height="20" fill="none">
+                <use xlink:href="./images/icons.svg#choose-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="calendar">
+        <div class="container">
+          <div class="calendar__top">
+            <button class="calendar__top-button">
+              <svg width="9" height="14" fill="none">
+                <use xlink:href="./images/icons.svg#calendar-left"></use>
+              </svg>
+            </button>
+            <button class="calendar__top-month swiped-button">Октябрь</button>
+            <button class="calendar__top-button">
+              <svg width="9" height="14" fill="none">
+                <use xlink:href="./images/icons.svg#calendar-right"></use>
+              </svg>
+            </button>
+          </div>
+          <h3 class="title">Выберите дату</h3>
+          <div class="calendar__month mt-16">
+            <div class="calendar__item calendar__item--week-day">Mon</div>
+            <div class="calendar__item calendar__item--week-day">Tue</div>
+            <div class="calendar__item calendar__item--week-day">Wed</div>
+            <div class="calendar__item calendar__item--week-day">Thu</div>
+            <div class="calendar__item calendar__item--week-day">Fri</div>
+            <div class="calendar__item calendar__item--week-day">Sat</div>
+            <div class="calendar__item calendar__item--week-day">Sun</div>
+            <div class="calendar__item">
+              <button class="popup-button calendar__button" disabled>30</button>
+            </div>
+            <div class="calendar__item">
+              <button class="popup-button calendar__button" disabled>31</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">1</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button
+                class="popup-button calendar__button calendar__button--active"
+              >
+                2
+              </button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-green"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-blue"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">3</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-blue"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">4</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">5</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">6</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">7</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">8</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">9</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">10</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-green"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-blue"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">11</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">12</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">13</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">14</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">15</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-green"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">16</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">17</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-green"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">18</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">19</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">20</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">21</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">22</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-green"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-blue"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">23</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">24</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">25</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">26</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">27</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">28</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">29</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-green"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-blue"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">30</button>
+            </div>
+            <div class="calendar__item calendar__item--active-day">
+              <button class="popup-button calendar__button">31</button>
+              <div class="calendar__circles">
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-green"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-purple"></use>
+                  </svg>
+                </div>
+                <div class="calendar__circle">
+                  <svg width="5" height="5" fill="none">
+                    <use xlink:href="./images/icons.svg#calendar-blue"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__item">
+              <button class="popup-button calendar__button" disabled>1</button>
+            </div>
+            <div class="calendar__item">
+              <button class="popup-button calendar__button" disabled>2</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiped">
+          <button class="swiped__button">
+            <div class="swiped__icon"></div>
+          </button>
+
+          <div class="calendar__swiped-top">
+            <h5 class="title">Select a date</h5>
+            <button class="swiped__close">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="calendar__swiped-content">
+            <div class="calendar__swiped-item">
+              <p class="calendar__swiped-month black-v-13">October 2024</p>
+              <div class="calendar__month">
+                <div class="calendar__item calendar__item--week-day">Mon</div>
+                <div class="calendar__item calendar__item--week-day">Tue</div>
+                <div class="calendar__item calendar__item--week-day">Wed</div>
+                <div class="calendar__item calendar__item--week-day">Thu</div>
+                <div class="calendar__item calendar__item--week-day">Fri</div>
+                <div class="calendar__item calendar__item--week-day">Sat</div>
+                <div class="calendar__item calendar__item--week-day">Sun</div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">1</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">2</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">3</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">4</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">5</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">6</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">7</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">8</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">9</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">10</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">11</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">12</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">13</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">14</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">15</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">16</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">17</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">18</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">19</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">20</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">21</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">22</button>
+                </div>
+                <div class="calendar__item">
+                  <button class="popup-button calendar__button">23</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">24</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">25</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">26</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">27</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">28</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">29</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">30</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">31</button>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__swiped-line"></div>
+            <div class="calendar__swiped-item">
+              <p class="calendar__swiped-month black-v-13">November 2024</p>
+              <div class="calendar__month">
+                <div class="calendar__item calendar__item--week-day">Mon</div>
+                <div class="calendar__item calendar__item--week-day">Tue</div>
+                <div class="calendar__item calendar__item--week-day">Wed</div>
+                <div class="calendar__item calendar__item--week-day">Thu</div>
+                <div class="calendar__item calendar__item--week-day">Fri</div>
+                <div class="calendar__item calendar__item--week-day">Sat</div>
+                <div class="calendar__item calendar__item--week-day">Sun</div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    1
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    2
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    3
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    4
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    5
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    6
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    7
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    8
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    9
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    10
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    11
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    12
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    13
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    14
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    15
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    16
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    17
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    18
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    19
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    20
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    21
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    22
+                  </button>
+                </div>
+                <div class="calendar__item">
+                  <button
+                    class="popup-button calendar__button calendar__item--active-day"
+                  >
+                    23
+                  </button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">24</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">25</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">26</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">27</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">28</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">29</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">30</button>
+                </div>
+                <div class="calendar__item calendar__item--active-day">
+                  <button class="popup-button calendar__button">31</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./libs/swiped/swiped.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiped.js"></script>
+  </body>
+</html>

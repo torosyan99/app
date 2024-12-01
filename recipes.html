@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <p class="header__text">Привет, Ксения!</p>
+          <p class="header__date">5 октября 2024</p>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="20" height="22">
+            <use xlink:href="./images/icons.svg#calendar"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./images/icons.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#train"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#calendar-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#messages"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="main">
+      <section class="recipes">
+        <h3 class="title">Категории</h3>
+        <div class="swiper recipes__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--green">
+                <h5 class="recipes__item-name black-v-14">Завтрак</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/breakfast.png"
+                  alt="breakfast"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--purple">
+                <h5 class="recipes__item-name black-v-14">Обед</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/lunch.png"
+                  alt="lunch"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--purple">
+                <h5 class="recipes__item-name black-v-14">Обед</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/lunch.png"
+                  alt="lunch"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--purple">
+                <h5 class="recipes__item-name black-v-14">Обед</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/lunch.png"
+                  alt="lunch"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--purple">
+                <h5 class="recipes__item-name black-v-14">Обед</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/lunch.png"
+                  alt="lunch"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="container">
+          <h3 class="title">Популярные блюда</h3>
+          <form class="mt-16 search-form">
+            <input class="search-form__input" type="text" placeholder="Поиск" />
+            <svg class="search-form__icon" width="20" height="20">
+              <use xlink:href="./images/icons.svg#search"></use>
+            </svg>
+          </form>
+          <div class="df-col mt-16">
+            <div class="white-box-2">
+              <img class="photo-56" src="./images/eating-1.png" />
+              <div class="popular__wrapper">
+                <h5 class="black-v-16 popular__name">Блинчик с черникой</h5>
+                <p class="popular__recipes">Медиум | 30 мин| 230 ккал</p>
+              </div>
+              <a class="link-blue" href="#">
+                <svg width="14" height="8">
+                  <use xlink:href="./images/icons.svg#graphics-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="white-box-2">
+              <img class="photo-56" src="./images/eating-1.png" />
+              <div class="popular__wrapper">
+                <h5 class="black-v-16 popular__name">Блинчик с черникой</h5>
+                <p class="popular__recipes">Медиум | 30 мин| 230 ккал</p>
+              </div>
+              <a class="link-blue" href="#">
+                <svg width="14" height="8">
+                  <use xlink:href="./images/icons.svg#graphics-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="white-box-2">
+              <img class="photo-56" src="./images/eating-1.png" />
+              <div class="popular__wrapper">
+                <h5 class="black-v-16 popular__name">Блинчик с черникой</h5>
+                <p class="popular__recipes">Медиум | 30 мин| 230 ккал</p>
+              </div>
+              <a class="link-blue" href="#">
+                <svg width="14" height="8">
+                  <use xlink:href="./images/icons.svg#graphics-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="white-box-2">
+              <img class="photo-56" src="./images/eating-1.png" />
+              <div class="popular__wrapper">
+                <h5 class="black-v-16 popular__name">Блинчик с черникой</h5>
+                <p class="popular__recipes">Медиум | 30 мин| 230 ккал</p>
+              </div>
+              <a class="link-blue" href="#">
+                <svg width="14" height="8">
+                  <use xlink:href="./images/icons.svg#graphics-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>

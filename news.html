@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <p class="header__text">Привет, Ксения!</p>
+          <p class="header__date">5 октября 2024</p>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="20" height="22">
+            <use xlink:href="./images/icons.svg#calendar"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./images/icons.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#train"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#calendar-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#messages"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="main">
+      <section class="stories">
+        <div class="stories__content">
+          <button class="stories__add">
+            <svg width="24" height="24">
+              <use xlink:href="./images/icons.svg#add"></use>
+            </svg>
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-1.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-2.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-3.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-4.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-4.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-4.png"
+              alt="user-photo"
+            />
+          </button>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <div class="df-col news__content">
+            <div class="white-box df-col news__item">
+              <div class="news__top">
+                <img
+                  class="news__photo"
+                  src="./images/story-1.png"
+                  alt="photo"
+                />
+                <div class="news__wrapper">
+                  <h5 class="black-v-14 news__name">Александр Плюшкин</h5>
+                  <p class="news__position">
+                    Кроссфит, FBB, Endurance, On Ramp
+                  </p>
+                </div>
+              </div>
+              <p class="news__text">
+                Дорогие участники! Мы рады сообщить, что начиная с следующей
+                недели в нашем фитнес клубе стартует новый курс по групповой
+                гимнастике. Занятия будут проходить три раза в неделю, и их
+                ведут опытные тренеры!
+              </p>
+              <img class="news__image" src="./images/news-1.png" alt="image" />
+            </div>
+            <div class="white-box df-col news__item">
+                <div class="news__top">
+                  <img
+                    class="news__photo"
+                    src="./images/crossfit.png"
+                    alt="photo"
+                  />
+                  <div class="news__wrapper">
+                    <h5 class="black-v-14 news__name">KTKROSSFIT</h5>
+                    <p class="news__position">
+                        администрация
+                    </p>
+                  </div>
+                </div>
+                <p class="news__text">
+                  Дорогие участники! Мы рады сообщить, что начиная с следующей
+                  недели в нашем фитнес клубе стартует новый курс по групповой
+                  гимнастике. Занятия будут проходить три раза в неделю, и их
+                  ведут опытные тренеры!
+                </p>
+                <img class="news__image" src="./images/news-1.png" alt="image" />
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>

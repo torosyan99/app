@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <p class="header__text">Привет, Ксения!</p>
+          <p class="header__date">5 октября 2024</p>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="20" height="22">
+            <use xlink:href="./images/icons.svg#calendar"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./images/icons.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="train.html">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#train"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#calendar-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#messages"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <section class="metcon">
+        <div class="container">
+          <div class="white-box">
+            <h5 class="blue-v-16">Metcon</h5>
+          </div>
+        </div>
+      </section>
+      <section class="train-count">
+        <div class="container">
+          <ul class="df-col train-count__list">
+            <li class="white-box-2 train-count__item">
+              <img
+                class="photo-56"
+                src="./images/story-1.png"
+                alt="photo"
+              />
+              <div class="train-count__wrapper">
+                <h5 class="blue-v-14 train-count__name">Плюшкин А.</h5>
+                <p class="train-count__num">7 тренировок</p>
+              </div>
+              <div class="train-count__end">
+                <svg width="24" height="24">
+                  <use xlink:href="./images/icons.svg#drop"></use>
+                </svg>
+                <span>70%</span>
+              </div>
+            </li>
+            <li class="white-box-2 train-count__item train-count__item--active">
+              <img
+                class="photo-56"
+                src="./images/story-2.png"
+                alt="photo"
+              />
+              <div class="train-count__wrapper">
+                <h5 class="blue-v-14 train-count__name">Вы</h5>
+                <p class="train-count__num">5 тренировок</p>
+              </div>
+              <div class="train-count__end">
+                <svg width="24" height="24">
+                  <use xlink:href="./images/icons.svg#drop"></use>
+                </svg>
+                <span>50%</span>
+              </div>
+            </li>
+            <li class="white-box-2 train-count__item">
+              <img
+                class="photo-56"
+                src="./images/story-3.png"
+                alt="photo"
+              />
+              <div class="train-count__wrapper">
+                <h5 class="blue-v-14 train-count__name">Сандаков А.</h5>
+                <p class="train-count__num">7 тренировок</p>
+              </div>
+              <div class="train-count__end">
+                <svg width="24" height="24">
+                  <use xlink:href="./images/icons.svg#drop"></use>
+                </svg>
+                <span>70%</span>
+              </div>
+            </li>
+            <li class="white-box-2 train-count__item">
+              <img
+                class="photo-56"
+                src="./images/story-4.png"
+                alt="photo"
+              />
+              <div class="train-count__wrapper">
+                <h5 class="blue-v-14 train-count__name">Иванов А.</h5>
+                <p class="train-count__num">7 тренировок</p>
+              </div>
+              <div class="train-count__end">
+                <svg width="24" height="24">
+                  <use xlink:href="./images/icons.svg#drop"></use>
+                </svg>
+                <span>70%</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="comments">
+        <div class="container">
+          <h3 class="title">Комментарии</h3>
+          <div class="comments__content mt-16 df-col">
+            <div class="white-box comments__item">
+              <div class="comments__item-top">
+                <img
+                  class="comments__item-photo"
+                  src="./images/story-5.png"
+                  alt="photo"
+                />
+                <h5 class="blue-v-14 comments__item-name">Сандаков А.</h5>
+              </div>
+              <p class="black-v-16 comments__item-text">
+                Кто сможет побить мой рекорд?)
+              </p>
+              <p class="comments__item-date">Wed 8:21 AM</p>
+            </div>
+            <div class="white-box comments__item">
+              <div class="comments__item-top">
+                <img
+                  class="comments__item-photo"
+                  src="./images/user-photo.png"
+                  alt="photo"
+                />
+                <h5 class="blue-v-14 comments__item-name">Петрова В.</h5>
+              </div>
+              <p class="black-v-16 comments__item-text">
+                Ну как-то легко сегодня было
+              </p>
+              <p class="comments__item-date">Wed 8:21 AM</p>
+            </div>
+            <div class="white-box comments__item">
+              <div class="comments__item-top">
+                <img
+                  class="comments__item-photo"
+                  src="./images/story-3.png"
+                  alt="photo"
+                />
+                <h5 class="blue-v-14 comments__item-name">Иванов С.</h5>
+              </div>
+              <p class="black-v-16 comments__item-text">Тренировка супер!</p>
+              <p class="comments__item-date">Wed 8:21 AM</p>
+            </div>
+          </div>
+          <form class="send-form">
+            <div class="send-form__wrapper">
+              <input
+                class="send-form__input"
+                type="text"
+                placeholder="Написать сообщение..."
+              />
+              <button class="send-form__button">
+                <svg width="24" height="24">
+                  <use xlink:href="./images/icons.svg#microphone"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="send-form__submit" type="submit">
+              <svg width="30" height="30">
+                <use xlink:href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <h5 class="header__nick">KTKROSSFIT</h5>
+          <div class="header__online">
+            <div class="header__circle"></div>
+            <span>35 человек</span>
+          </div>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="18" height="24">
+            <use xlink:href="./images/icons.svg#blue-profile"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./images/icons.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="train.html">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#train"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#calendar-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#messages"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <section class="library">
+        <div class="container">
+          <form class="search-form">
+            <input class="search-form__input" type="text" placeholder="Поиск" />
+            <svg class="search-form__icon" width="20" height="20">
+              <use xlink:href="./images/icons.svg#search"></use>
+            </svg>
+          </form>
+          <h3 class="title library__title">Упражнения</h3>
+          <div class="library__exercises mt-16 df-col">
+            <div class="white-box-2 library__exercise">
+              <img class="photo-56" src="./images/exercises/image-1.png" />
+              <div class="library__wrapper">
+                <h5 class="black-v-16 library__exercise-name">Выпрыгивания</h5>
+                <p class="library__time">00:30</p>
+              </div>
+              <a class="play" href="#">
+                <svg width="8" height="10">
+                  <use xlink:href="./images/icons.svg#polygon-2"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="white-box-2 library__exercise">
+              <img class="photo-56" src="./images/exercises/image-2.png" />
+              <div class="library__wrapper">
+                <h5 class="black-v-16 library__exercise-name">Приседания</h5>
+                <p class="library__time">01:00</p>
+              </div>
+              <a class="play" href="#">
+                <svg width="8" height="10">
+                  <use xlink:href="./images/icons.svg#polygon-2"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="white-box-2 library__exercise">
+              <img class="photo-56" src="./images/exercises/image-1.png" />
+              <div class="library__wrapper">
+                <h5 class="black-v-16 library__exercise-name">Выпрыгивания</h5>
+                <p class="library__time">00:30</p>
+              </div>
+              <a class="play" href="#">
+                <svg width="8" height="10">
+                  <use xlink:href="./images/icons.svg#polygon-2"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="white-box-2 library__exercise">
+              <img class="photo-56" src="./images/exercises/image-2.png" />
+              <div class="library__wrapper">
+                <h5 class="black-v-16 library__exercise-name">Приседания</h5>
+                <p class="library__time">01:00</p>
+              </div>
+              <a class="play" href="#">
+                <svg width="8" height="10">
+                  <use xlink:href="./images/icons.svg#polygon-2"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="white-box-2 library__exercise">
+              <img class="photo-56" src="./images/exercises/image-1.png" />
+              <div class="library__wrapper">
+                <h5 class="black-v-16 library__exercise-name">Приседания</h5>
+                <p class="library__time">01:00</p>
+              </div>
+              <a class="play" href="#">
+                <svg width="8" height="10">
+                  <use xlink:href="./images/icons.svg#polygon-2"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

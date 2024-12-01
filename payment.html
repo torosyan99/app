@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="payment">
+      <div class="container">
+        <h3 class="title">Payment methods</h3>
+        <div class="payment__card">
+            <div class="payment__card-top">
+                <p class="payment__card-name">ADRBank</p>
+                <button class="payment__card-change">
+                    <svg width="23" height="23">
+                        <use xlink:href="./images/icons.svg#card-change"></use>
+                    </svg>
+                </button>
+            </div>
+            <p class="payment__card-num">
+                8763 2736 9873 0329
+            </p>
+            <div class="payment__bottom">
+                <p class="payment__bottom-value">
+                    <span>Card Holder Name</span>
+                    HILLERY NEVELIN
+                </p>
+                <p class="payment__bottom-value">
+                    <span>Expired Date</span>
+                    10/28
+                </p>
+                <img class="payment__card-logo" src="./images/master.svg" alt="master" />
+            </div>
+        </div>
+        <button class="payment__button">Отвязать</button>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

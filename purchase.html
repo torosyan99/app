@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <p class="header__text">Привет, Ксения!</p>
+          <p class="header__date">5 октября 2024</p>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="20" height="22">
+            <use xlink:href="./images/icons.svg#calendar"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./images/icons.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="train.html">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#train"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#calendar-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#messages"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <section class="sales">
+        <div class="container">
+          <div class="sales__card">
+            <h3 class="sales__title">Скидка 20%</h3>
+            <p class="sales__text">на все наши программы</p>
+            <div class="sales__background"></div>
+            <img class="sales__image" src="./images/sales.png" alt="image" />
+          </div>
+        </div>
+      </section>
+      <section class="ticket">
+        <div class="container">
+          <h3 class="title">
+            Ваш абонемент:
+            <span> Полный безлимит на год </span>
+          </h3>
+          <p class="ticket__term">Срок действия до 20.12.2024</p>
+          <div class="content-choice ticket__choice">
+            <div class="content-choice__box">
+              <button
+                class="content-choice__button content-choice__button--active"
+                data-index="1"
+              >
+                Годовой
+              </button>
+              <button class="content-choice__button" data-index="2">
+                Ежемесячный
+              </button>
+            </div>
+          </div>
+
+          <div class="content" data-index="1">
+            <div class="df-col mt-16 ticket__cards">
+              <div class="ticket__card">
+                <h5 class="ticket__card-title">
+                  Полный безлимит
+                  <span>на год</span>
+                </h5>
+                <p class="ticket__text">
+                  Можно посещать зал в любое время работы зала без ограничений
+                  по продолжительности.
+                  <a class="ticket__text-link" href="#"> Читать далее...</a>
+                </p>
+                <div class="ticket__card-bottom ticket__card-mt">
+                  <p class="ticket__price">15 000₽ </p>
+                  <a class="ticket__card-button" href="#">
+                    <svg width="12" height="12">
+                      <use xlink:href="./images/icons.svg#polygon-1"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="ticket__card ticket__card--blue">
+                <h5 class="ticket__card-title">
+                  Полный безлимит
+                  <span>на год</span>
+                </h5>
+                <p class="ticket__text">
+                  Можно посещать зал в любое время работы зала без ограничений
+                  по продолжительности.
+                  <a class="ticket__text-link" href="#"> Читать далее...</a>
+                </p>
+                <div class="ticket__card-bottom ticket__card-mt">
+                  <p class="ticket__price">15 000₽ </p>
+                  <a class="ticket__card-button" href="#">
+                    <svg width="12" height="12">
+                      <use xlink:href="./images/icons.svg#polygon-1"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="ticket__card">
+                <h5 class="ticket__card-title">
+                  Полный безлимит
+                  <span>на год</span>
+                </h5>
+                <p class="ticket__text">
+                  Можно посещать зал в любое время работы зала без ограничений
+                  по продолжительности.
+                  <a class="ticket__text-link" href="#"> Читать далее...</a>
+                </p>
+                <div class="ticket__card-bottom ticket__card-mt">
+                  <p class="ticket__price">15 000₽ </p>
+                  <a class="ticket__card-button" href="#">
+                    <svg width="12" height="12">
+                      <use xlink:href="./images/icons.svg#polygon-1"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content" data-index="2"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

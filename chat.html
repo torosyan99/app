@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <p class="header__text">Привет, Ксения!</p>
+          <p class="header__date">5 октября 2024</p>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="20" height="22">
+            <use xlink:href="./images/icons.svg#calendar"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="chat-bottom">
+      <form class="send-form">
+        <div class="send-form__wrapper">
+          <input
+            class="send-form__input"
+            type="text"
+            placeholder="Написать сообщение..."
+          />
+          <button class="send-form__button">
+            <svg width="24" height="24">
+              <use xlink:href="./images/icons.svg#microphone"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="send-form__submit" type="submit">
+          <svg width="30" height="30">
+            <use xlink:href="./images/icons.svg#send"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <main class="main">
+      <section class="chat">
+        <div class="container">
+          <div class="chat__content">
+            <p class="chat__date">Wed 8:21 AM</p>
+            <div class="chat__message">
+              <img
+                class="chat__user-photo"
+                src="./images/user-photo.png"
+                alt="photo"
+              />
+              <div class="chat__box">
+                <p class="chat__text">
+                  Всем привет! 👋 Кто сегодня пойдёт в зал на тренировку ног в
+                  14:00?)
+                </p>
+              </div>
+            </div>
+            <div class="chat__message chat__message--send">
+              <div class="chat__box">
+                <p class="chat__text">Окей, пошли вместе)</p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <img
+                class="chat__user-photo"
+                src="./images/user-photo.png"
+                alt="photo"
+              />
+              <div class="chat__box">
+                <p class="chat__text">Отлично договорились!</p>
+              </div>
+            </div>
+            <div class="chat__message">
+              <img
+                class="chat__user-photo"
+                src="./images/story-5.png"
+                alt="photo"
+              />
+              <div class="chat__box">
+                <p class="chat__text">
+                  Подскажите, пожалуйста, хорошее упражнение на преес! Не могу
+                  похудеть)0)
+                </p>
+              </div>
+            </div>
+            <div class="chat__message chat__message--send">
+              <div class="chat__box">
+                <p class="chat__text">Дело не в упражнениях)0)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

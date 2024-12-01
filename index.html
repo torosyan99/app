@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <p class="header__text">Привет, Ксения!</p>
+          <p class="header__date">5 октября 2024</p>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="20" height="22">
+            <use xlink:href="./images/icons.svg#calendar"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./images/icons.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#train"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#calendar-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#messages"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="popup">
+      <div class="popup__box">
+        <img class="popup__box-top" src="./images/qr.png"  />
+        <h5 class="popup__title black-v-18">Ваш QR-COD</h5>
+        <p class="popup__text">Покажите код администратору</p>
+        <a  class="button popup__button" href="/">На главную</a>
+      </div>
+    </div>
+    <main class="main">
+      <section class="stories">
+        <div class="stories__content">
+          <button class="stories__add">
+            <svg width="24" height="24">
+              <use xlink:href="./images/icons.svg#add"></use>
+            </svg>
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-1.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-2.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-3.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-4.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-4.png"
+              alt="user-photo"
+            />
+          </button>
+          <button class="stories__item stories__item--not-open">
+            <img
+              class="stories__user-photo"
+              src="./images/story-4.png"
+              alt="user-photo"
+            />
+          </button>
+        </div>
+      </section>
+      <section class="qr">
+        <div class="container">
+          <button class="qr__button popup-button">
+            <div class="qr__box">
+              <img class="qr__item" src="./images/qr.png" />
+            </div>
+            <h3 class="title">
+              QR-COD
+              <span class="title__color-blue"> Для входа</span>
+            </h3>
+          </button>
+        </div>
+      </section>
+      <section class="ticket">
+        <div class="container">
+          <h3 class="title">
+            Ваш абонемент:
+            <span> Полный безлимит на год </span>
+          </h3>
+          <p class="ticket__term">Срок действия до 20.12.2024</p>
+          <div class="ticket__card ticket__card--blue">
+            <h5 class="ticket__card-title">
+              Полный безлимит
+              <span>на год</span>
+            </h5>
+            <div class="ticket__card-bottom">
+              <p class="ticket__text">
+                Можно посещать зал в любое время работы зала без ограничений по
+                продолжительности.
+                <a class="ticket__text-link" href="#"> Читать далее...</a>
+              </p>
+              <a class="ticket__card-button" href="#">
+                <svg width="14" height="8">
+                  <use xlink:href="./images/icons.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="white-card">
+            <h5 class="blue-v-14 white-card__title">Записи на тренировки</h5>
+            <p class="white-card__date">На 26 октября, 02:00 pm</p>
+            <p class="white-card__type">Тренировка - <span>CROSSFIT</span></p>
+            <div class="white-card__line"></div>
+            <button class="button white-card__button">Напомнить</button>
+          </div>
+        </div>
+      </section>
+      <section class="activity">
+        <div class="container">
+          <div class="title">
+            Ваша активность в
+            <span> Октябре </span>
+          </div>
+          <ul class="activity__list mt-16">
+            <li class="activity__item">
+              <p class="blue-v-16 activity__item-name">Passes</p>
+              <p class="black-v-13 activity__item-days mt-16">0 day</p>
+            </li>
+            <li class="activity__item">
+              <p class="blue-v-16 activity__item-name">Series</p>
+              <p class="black-v-13 activity__item-days mt-16">12 day</p>
+            </li>
+            <li class="activity__item">
+              <p class="blue-v-16 activity__item-name">No-shows</p>
+              <p class="black-v-13 activity__item-days mt-16">0 day</p>
+            </li>
+            <li class="activity__item">
+              <p class="blue-v-16 activity__item-name">Late-cancels</p>
+              <p class="black-v-13 activity__item-days mt-16">12 day</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="blue-card">
+            <svg width="24" height="24">
+              <use xlink:href="./images/icons.svg#tasks-icon"></use>
+            </svg>
+            <h5 class="blue-card__title">Задача</h5>
+            <p class="blue-card__text">
+              <span>10 </span> кардио тренировок в неделю.
+            </p>
+            <div class="blue-card__wrapper">
+              <span class="blue-card__train">Тренировок</span>
+              <span class="blue-card__count">5 / 10 раз.</span>
+            </div>
+            <div class="blue-card__indicator">
+              <div class="blue-card__indicator-line" style="width: 120px"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipes">
+        <h3 class="title">
+          Лучшие рецепты <br />
+          для приготовления
+        </h3>
+        <div class="swiper recipes__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--green">
+                <h5 class="recipes__item-name black-v-14">Завтрак</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/breakfast.png"
+                  alt="breakfast"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--purple">
+                <h5 class="recipes__item-name black-v-14">Обед</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/lunch.png"
+                  alt="lunch"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--purple">
+                <h5 class="recipes__item-name black-v-14">Обед</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/lunch.png"
+                  alt="lunch"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--purple">
+                <h5 class="recipes__item-name black-v-14">Обед</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/lunch.png"
+                  alt="lunch"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide recipes__slide">
+              <div class="recipes__item recipes__item--purple">
+                <h5 class="recipes__item-name black-v-14">Обед</h5>
+                <p class="recipes__dishes-count">120+ Блюд</p>
+                <a class="recipes__button" href="#">Выбрать</a>
+                <img
+                  class="recipes__image"
+                  src="./images/lunch.png"
+                  alt="lunch"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="birthdays">
+        <div class="container">
+          <div class="white-box">
+            <h3 class="blue-v-16 birthdays__title">Дни рождения</h3>
+            <ul class="birthdays__list mt-16">
+              <li class="birthdays__item">
+                <img class="photo-56" src="./images/story-4.png" />
+                <h5 class="blue-v-14 birthdays__name">Иванов А.</h5>
+                <p class="birthdays__date">24 октября</p>
+              </li>
+              <li class="birthdays__item">
+                <img class="photo-56" src="./images/story-1.png" />
+                <h5 class="blue-v-14 birthdays__name">Петров А.</h5>
+                <p class="birthdays__date">27 октября</p>
+              </li>
+              <li class="birthdays__item">
+                <img class="photo-56" src="./images/story-3.png" />
+                <h5 class="blue-v-14 birthdays__name">Суслов А.</h5>
+                <p class="birthdays__date">27 октября</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__user">
+          <img
+            class="header__user-photo"
+            src="./images/user-photo.png"
+            alt="user-photo"
+          />
+          <div class="header__user-online">
+            <svg width="16" height="16">
+              <use xlink:href="./images/icons.svg#online"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__box">
+          <p class="header__text">Привет, Ксения!</p>
+          <p class="header__date">5 октября 2024</p>
+        </div>
+        <a class="header__button" href="#">
+          <svg width="20" height="22">
+            <use xlink:href="./images/icons.svg#calendar"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./images/icons.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="train.html">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#train"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#calendar-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#messages"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="main">
+      <section class="choose">
+        <div class="container">
+          <div class="choose__select">
+            <button class="white-box black-v-16 choose__button">
+              <svg width="20" height="20">
+                <use xlink:href="./images/icons.svg#dumbbell"></use>
+              </svg>
+              <span class="choose__type">CROSSFIT</span>
+              <svg class="choose__arrow" width="20" height="20" fill="none">
+                <use xlink:href="./images/icons.svg#choose-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="signin">
+        <div class="container">
+          <a class="button signin__button" href="personal.html">
+            Запись на персональную тренировку
+          </a>
+          <form class="signin__form">
+            <h3 class="title signin__title">Запишитесь класс</h3>
+            <div class="white-box signin__graphics">
+              <div class="signin__graphic">
+                <input
+                  class="signin__radio"
+                  type="radio"
+                  name="graphic"
+                  id="radio-1"
+                  checked
+                />
+                <div class="signin__circle"></div>
+                <label class="signin__label" for="radio-1">
+                  <p class="graphic-time">5:30 AM - 6:30 AM</p>
+                  <span>CrossFit</span>
+                  <input class="signin__radio" type="radio" name="graphic" />
+                </label>
+              </div>
+              <div class="signin__graphic">
+                <input
+                  class="signin__radio"
+                  type="radio"
+                  name="graphic"
+                  id="radio-2"
+                />
+                <div class="signin__circle"></div>
+                <label class="signin__label" for="radio-2">
+                  <p class="graphic-time">5:30 AM - 6:30 AM</p>
+                  <span>CrossFit</span>
+                </label>
+              </div>
+              <div class="signin__graphic">
+                <input
+                  class="signin__radio"
+                  type="radio"
+                  name="graphic"
+                  id="radio-3"
+                />
+                <div class="signin__circle"></div>
+                <label class="signin__label" for="radio-2">
+                  <p class="graphic-time">5:30 AM - 6:30 AM</p>
+                  <span>CrossFit</span>
+                </label>
+              </div>
+              <div class="signin__graphic">
+                <input
+                  class="signin__radio"
+                  type="radio"
+                  name="graphic"
+                  id="radio-4"
+                />
+                <div class="signin__circle"></div>
+                <label class="signin__label" for="radio-2">
+                  <p class="graphic-time">5:30 AM - 6:30 AM</p>
+                  <span>CrossFit</span>
+                </label>
+              </div>
+              <div class="signin__graphic">
+                <input
+                  class="signin__radio"
+                  type="radio"
+                  name="graphic"
+                  id="radio-5"
+                />
+                <div class="signin__circle"></div>
+                <label class="signin__label" for="radio-2">
+                  <p class="graphic-time">5:30 AM - 6:30 AM</p>
+                  <span>CrossFit</span>
+                </label>
+              </div>
+              <div class="signin__graphic">
+                <input
+                  class="signin__radio"
+                  type="radio"
+                  name="graphic"
+                  id="radio-6"
+                />
+                <div class="signin__circle"></div>
+                <label class="signin__label" for="radio-2">
+                  <p class="graphic-time">5:30 AM - 6:30 AM</p>
+                  <span>CrossFit</span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
