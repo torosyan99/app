@@ -1237,6 +1237,7 @@ section {
 }
 
 .library-card__video {
+    width: 100%;
     object-fit: fill;
     height: 174px;
 }
